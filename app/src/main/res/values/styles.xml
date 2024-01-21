@@ -1,0 +1,12 @@
+<resources>
+	<style name="NoActionBar" parent="@android:style/Theme.Material.Light.NoActionBar">
+		<item name="android:colorPrimary">@color/colorPrimary</item>
+		<item name="android:colorPrimaryDark">@color/colorPrimaryDark</item>
+		<item name="android:colorAccent">@color/colorAccent</item>
+		<item name="android:colorControlHighlight">@color/colorControlHighlight</item>
+		<item name="android:colorControlNormal">@color/colorControlNormal</item>
+	</style>
+	<style name="NoStatusBar" parent="@style/Theme.AppCompat.DayNight.NoActionBar">
+		<item name="android:windowFullscreen">true</item>
+	</style>
+</resources>

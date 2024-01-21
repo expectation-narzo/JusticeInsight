@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cases_small"
+        android:layout_width="match_parent"
+        app:cardCornerRadius="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="match_parent" >
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardCornerRadius="5dp"
+                android:layout_marginTop="2dp"
+                android:layout_weight="1"
+                android:layout_marginStart="5dp"
+                app:cardBackgroundColor="#212121"
+                android:layout_marginEnd="2dp"
+                android:layout_marginBottom="5dp" >
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:padding="8dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/case_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:alpha="0.7"
+                        android:singleLine="true"
+                        android:fontFamily="@font/oplus0730_regular"
+                        android:layout_marginBottom="2dp"
+                        android:textSize="14dp"
+                        android:text="137453"/>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardCornerRadius="5dp"
+                android:layout_marginTop="2dp"
+                android:layout_weight="1"
+                android:layout_marginStart="5dp"
+                app:cardBackgroundColor="#212121"
+                android:layout_marginEnd="2dp"
+                android:layout_marginBottom="5dp" >
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:padding="8dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/case_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:alpha="0.7"
+                        android:fontFamily="@font/oplus0730_regular"
+                        android:layout_marginBottom="2dp"
+                        android:textSize="14dp"
+                        android:singleLine="true"
+                        android:text="02/08/2004"/>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardCornerRadius="5dp"
+                android:layout_marginTop="2dp"
+                android:layout_weight="1"
+                android:layout_marginStart="5dp"
+                app:cardBackgroundColor="#212121"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp" >
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:padding="8dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/case_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:alpha="0.7"
+                        android:fontFamily="@font/oplus0730_regular"
+                        android:layout_marginBottom="2dp"
+                        android:textSize="14dp"
+                        android:singleLine="true"
+                        android:text="Murder"/>
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cases_expand"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="5dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_weight="1"
+                    android:visibility="gone"
+                    android:layout_marginStart="5dp"
+                    app:cardBackgroundColor="#212121"
+                    android:layout_marginEnd="2dp"
+                    android:layout_marginBottom="5dp" >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:padding="8dp"
+                        android:layout_height="match_parent" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:alpha="0.7"
+                            android:fontFamily="@font/oplus0730_regular"
+                            android:layout_marginBottom="2dp"
+                            android:textSize="17dp"
+                            android:text="Case Details"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:alpha="0.4"
+                            android:fontFamily="@font/oplus0730_regular"
+                            android:textSize="14dp"
+                            android:text="After viewing the brief of evidence and taking instructions from the client, it was clear that the Crown had a very strong case in relation to the charge of manslaughter, but not to the charge of murder. Accordingly, and in collaboration with the client, we offered to resolve the matter on a plea of guilty to manslaughter. This offer was rejected by the Crown.
+After requesting further medical evidence as to the cause of death it became clear that there were problems with the statement made by the witness who was present during the incident. The Crown would still not consider reducing the charge.
+As is often the case, two days prior to the trial, the Crown acquiesced and accepted a plea of guilty to manslaughter. The client received a sentence of eight years with a non-parole period of six years. This was a very good outcome for the client.
+Murder is the most serious charge that an accused person can face. If your loved one is facing a charge of murder, you should engage the best Murder lawyers in Victoria by calling Dribbin Brown Criminal Lawyers. "/>
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

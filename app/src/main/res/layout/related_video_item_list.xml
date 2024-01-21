@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#171717"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="#171717"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:layout_marginBottom="5dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+      <ImageView
+          android:id = "@+id/related_videos_thumbnail"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:src = "@drawable/download"
+          android:scaleType="centerCrop"
+          />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom|right" >
+             <LinearLayout
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginBottom="5dp"
+                 android:layout_marginRight="5dp"
+                 >
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="#212121"
+                app:cardElevation="10dp"
+                android:alpha="0.7"
+                app:cardCornerRadius="6dp">
+
+            <TextView
+                android:padding="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13dp"
+                android:text="5:19"/>
+
+            </androidx.cardview.widget.CardView>
+             </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="7dp">
+
+
+        <LinearLayout
+            android:layout_width="80dp"
+            android:gravity="center_horizontal"
+            android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                app:cardCornerRadius="160dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/user"
+                android:scaleType="centerCrop"
+                />
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_weight="4.1"
+            android:orientation="vertical"
+            android:layout_marginBottom="5dp"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:id = "@+id/related_videos_title"
+                android:text="I transformed Nether into overworld "
+                android:fontFamily="@font/oplus0730_regular"
+                android:textColor="#FFFFFF"
+                android:textSize="15dp"
+                android:alpha="0.5"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id = "@+id/related_videos_description"
+                android:text="I Transformed Nether into overworld"
+                android:fontFamily="@font/oplus0730_regular"
+                android:textColor="#FFFFFF"
+                android:textSize="11dp"
+                android:alpha="0.3"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="20dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="8dp"
+            android:gravity="center_horizontal"
+            android:layout_height="match_parent">
+
+        </LinearLayout>
+    </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

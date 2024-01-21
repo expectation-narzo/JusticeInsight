@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "277092692651",
+    "firebase_url": "https://justice-insight-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "justice-insight",
+    "storage_bucket": "justice-insight.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:277092692651:android:ce5d79eb2d5149e1b47dee",
+        "android_client_info": {
+          "package_name": "com.justice.insight"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC-DXmnUAckBTsGdAyveAp9qALHFBcD614"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

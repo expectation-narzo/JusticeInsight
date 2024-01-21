@@ -1,0 +1,999 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#171717"
+        android:gravity="bottom"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/linear_base_of_all"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+            <!--session pannel-->
+            <LinearLayout
+                android:id="@+id/session_page_base"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="8dp"
+                android:visibility="gone"
+                android:orientation="vertical">
+
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent" >
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:orientation="horizontal"
+              android:layout_height="match_parent" >
+
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:layout_weight="10" >
+              </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_weight="1" >
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" >
+                        <LinearLayout
+                            android:layout_width="3dp"
+                            android:layout_marginStart="18dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="#FFFFFF"
+                            android:layout_height="match_parent">
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" >
+
+                            <ListView
+                                android:id="@+id/session_list"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:layout_width="match_parent"
+                                android:overScrollMode="never"
+                                android:layout_height="match_parent"
+                                android:scrollbars="none" >
+
+                            </ListView>
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="4dp"
+                        android:background="#121212"
+                        android:layout_marginTop="50dp"
+                        android:layout_marginBottom="50dp"
+                        android:layout_height="match_parent">
+
+                    </LinearLayout>
+            </LinearLayout>
+          </LinearLayout>
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:orientation="horizontal"
+              android:layout_weight="1"
+              android:layout_height="match_parent" >
+
+          </LinearLayout>
+      </RelativeLayout>
+
+
+            </LinearLayout>
+            <!--more pannel-->
+            <LinearLayout
+                android:id="@+id/more_page_base"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="match_parent" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:layout_height="wrap_content" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal" >
+
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            app:cardCornerRadius="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_weight="1"
+                            android:id="@+id/related_vedios_btn"
+                            app:cardBackgroundColor="#2ea555"
+                            app:cardElevation="15dp" >
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:padding="9dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_vertical"
+                                    android:orientation="vertical" >
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:alpha="0.7"
+                                        android:fontFamily="@font/oplus0730_regular"
+                                        android:layout_marginBottom="2dp"
+                                        android:textSize="17dp"
+                                        android:text="Related Videos"/>
+
+                                </LinearLayout>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:alpha="0.5"
+
+                                    android:fontFamily="@font/oplus0730_regular"
+                                    android:textSize="14dp"
+                                    android:text="Supportive , Related videos for the case filed and your well being"/>
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            app:cardCornerRadius="10dp"
+                            android:id="@+id/ipc_btn"
+                            android:alpha="1"
+                            android:layout_weight="1"
+                            app:cardBackgroundColor="#212121"
+                            app:cardElevation="15dp" >
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:padding="9dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_vertical"
+                                    android:orientation="vertical" >
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:alpha="0.7"
+                                        android:fontFamily="@font/oplus0730_regular"
+                                        android:layout_marginBottom="2dp"
+                                        android:textSize="17dp"
+                                        android:text="Indian Penal Code"/>
+
+                                </LinearLayout>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:alpha="0.5"
+                                    android:fontFamily="@font/oplus0730_regular"
+                                    android:text="IPC / Criminal code related to the crime commited"
+                                    android:textSize="14dp" />
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal" >
+
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            app:cardCornerRadius="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:alpha="1"
+                            android:id="@+id/suspend_btn"
+                            android:layout_weight="1"
+                            app:cardBackgroundColor="#212121"
+                            app:cardElevation="15dp" >
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:padding="9dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_vertical"
+                                    android:orientation="vertical" >
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:alpha="0.7"
+                                    android:fontFamily="@font/oplus0730_regular"
+                                    android:layout_marginBottom="2dp"
+                                    android:textSize="17dp"
+                                    android:text="Video Conferencing"/>
+
+                                </LinearLayout>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:alpha="0.5"
+                                    android:fontFamily="@font/oplus0730_regular"
+                                    android:textSize="14dp"
+                                    android:text="Video Conferencing with the help of username"/>
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            app:cardCornerRadius="10dp"
+                            android:alpha="1"
+                            android:id="@+id/health_btn"
+                            android:layout_weight="1"
+                            app:cardBackgroundColor="#212121"
+                            app:cardElevation="15dp" >
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:padding="9dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_vertical"
+                                    android:orientation="vertical" >
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:alpha="0.7"
+                                        android:fontFamily="@font/oplus0730_regular"
+                                        android:layout_marginBottom="2dp"
+                                        android:textSize="17dp"
+                                        android:text="Health Support"/>
+
+                                </LinearLayout>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:alpha="0.5"
+                                    android:fontFamily="@font/oplus0730_regular"
+                                    android:text="Health related and motivational content"
+                                    android:textSize="14dp" />
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+                    </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#FFFFFF"
+                    android:layout_marginTop="15dp"
+                    android:alpha="0.2"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"/>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="10dp"
+                        app:cardBackgroundColor="#212121"
+                        app:cardElevation="15dp">
+
+              <LinearLayout
+                 android:layout_width="match_parent"
+                 android:orientation="horizontal"
+                 android:layout_height="match_parent">
+
+
+                  <!-- related videos-->
+                 <LinearLayout
+                     android:id="@+id/related_vedios_base"
+                     android:layout_width="match_parent"
+                     android:visibility="visible"
+                     android:orientation="vertical"
+
+                     android:layout_height="match_parent">
+
+                     <LinearLayout
+                         android:layout_width="match_parent"
+                         android:padding="10dp"
+                         android:layout_height="wrap_content">
+
+                         <TextView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:text="Related Vedios"
+                             android:fontFamily="@font/oplus0730_regular"
+                             android:textColor="#FFFFFF"
+                             android:textSize="16dp"
+                             android:alpha="0.5"/>
+                     </LinearLayout>
+
+                <ListView
+                    android:id="@+id/related_vedios_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:smoothScrollbar="false"
+                    android:scrollbars="none" >
+
+                </ListView>
+                 </LinearLayout>
+                  <!-- ipc-->
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:orientation="vertical"
+                     android:id="@+id/ipc_base"
+                     android:layout_height="match_parent"
+                     android:visibility="gone">
+
+
+                     <LinearLayout
+                         android:layout_width="match_parent"
+                         android:orientation="vertical"
+                         android:layout_height="match_parent" >
+                         <LinearLayout
+                             android:layout_width="match_parent"
+                             android:padding="10dp"
+                             android:layout_height="wrap_content">
+                             <TextView
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:text="Indian Penal Code"
+                                 android:fontFamily="@font/oplus0730_regular"
+                                 android:textColor="#FFFFFF"
+                                 android:textSize="16dp"
+                                 android:alpha="0.5"/>
+                         </LinearLayout>
+                         <ListView
+                             android:id="@+id/ipc_list"
+                             android:layout_width="match_parent"
+                             android:layout_height="match_parent"
+                             android:smoothScrollbar="false"
+                             android:scrollbars="none"/>
+
+                     </LinearLayout>
+                 </LinearLayout>
+                  <!-- suspend-->
+                 <LinearLayout
+                     android:id="@+id/suspend_base"
+                     android:layout_width="match_parent"
+                     android:orientation="vertical"
+                     android:layout_height="match_parent">
+
+                     <ListView
+                         android:id="@+id/video_calling_list"
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent"
+                         android:smoothScrollbar="false"
+                         android:scrollbars="none"/>
+
+                 </LinearLayout>
+                  <!-- health-->
+                 <LinearLayout
+                     android:id="@+id/health_base"
+                     android:layout_width="match_parent"
+                     android:orientation="vertical"
+                     android:layout_height="match_parent">
+
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:paddingStart="5dp"
+                         android:text="Still Working on ... (Wait for future updates)"
+                         android:fontFamily="@font/oplus0730_regular"
+                         android:alpha="0.7"/>
+
+
+                 </LinearLayout>
+
+
+             </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+          </LinearLayout>
+
+       </LinearLayout>
+            <!--lawyer choose pannel-->
+            <LinearLayout
+                android:id="@+id/chat_page_base"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:orientation="horizontal">
+
+                   <androidx.appcompat.widget.SearchView
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <ListView
+                        android:id="@+id/lawyer_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scrollbars="none"
+                        android:overScrollMode="never">
+
+                    </ListView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <!--profile pannel-->
+            <LinearLayout
+                android:id="@+id/profile_page_base"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="visible"
+                android:orientation="vertical">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#212121"
+                            android:layout_weight="4"
+                            ></LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            ></LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:layout_weight="2">
+                         <androidx.cardview.widget.CardView
+                             android:layout_width="wrap_content"
+                             app:cardCornerRadius="160dp"
+                             android:elevation="20dp"
+                             app:cardBackgroundColor="#717"
+                             android:layout_height="wrap_content">
+                             <ImageView
+                                 android:id="@+id/profile_photo"
+                                 android:layout_width="130dp"
+                                 android:layout_height="130dp"
+                                 android:scaleType="centerCrop"
+                                 android:src="@drawable/user"/>
+
+                         </androidx.cardview.widget.CardView>
+
+                            </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            ></LinearLayout>
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:layout_weight="2">
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingStart="20dp"
+                            android:paddingEnd="20dp"
+                            android:orientation="vertical"
+                            android:layout_weight="1">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="15dp"
+                                android:orientation="horizontal">
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="match_parent"
+                                    android:id="@+id/cases_btn"
+                                    android:layout_height="100dp"
+                                    app:cardCornerRadius="10dp"
+                                    android:layout_marginEnd="10dp"
+                                    android:layout_weight="1"
+                                    app:cardBackgroundColor="#212121"
+                                    app:cardElevation="15dp" >
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical"
+                                    android:padding="9dp">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:alpha="0.7"
+                                        android:fontFamily="@font/oplus0730_regular"
+                                        android:layout_marginBottom="2dp"
+                                        android:textSize="17dp"
+                                        android:text="Cases"/>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:alpha="0.4"
+                                        android:fontFamily="@font/oplus0730_regular"
+                                        android:textSize="14dp"
+                                        android:text="Cases on prisoner and its sub details with previous cases"/>
+
+                                </LinearLayout>
+
+                                </androidx.cardview.widget.CardView>
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="100dp"
+                                    app:cardCornerRadius="10dp"
+                                    android:layout_weight="1"
+                                    android:id="@+id/medical_btn"
+                                    app:cardBackgroundColor="#212121"
+                                    app:cardElevation="15dp" >
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="vertical"
+                                        android:padding="9dp">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:alpha="0.7"
+                                            android:fontFamily="@font/oplus0730_regular"
+                                            android:layout_marginBottom="2dp"
+                                            android:textSize="17dp"
+                                            android:text="Medical Records"/>
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:alpha="0.4"
+                                            android:textSize="14dp"
+                                            android:fontFamily="@font/oplus0730_regular"
+                                            android:text="Consist of prisoners montly medical and health records"/>
+
+                                    </LinearLayout>
+
+                                </androidx.cardview.widget.CardView>
+
+
+                            </LinearLayout>
+                            <ScrollView
+
+                                android:layout_width="match_parent"
+                                android:scrollbars="none"
+                                android:layout_height="match_parent">
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical">
+
+
+
+                                    <androidx.cardview.widget.CardView
+                                        android:layout_width="match_parent"
+                                        app:cardCornerRadius="10dp"
+                                        app:cardBackgroundColor="#212121"
+                                        android:layout_height="wrap_content">
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:gravity="center_vertical"
+                                            android:padding="12dp"
+                                            android:layout_height="match_parent" >
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="Name : "
+                                                android:textSize="15dp"
+                                                android:textStyle="bold"
+                                                android:alpha="0.7"/>
+                                            <TextView
+                                                android:id="@+id/username_txt"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:paddingStart="5dp"
+                                                android:text="Yuvraj"
+                                                android:fontFamily="@font/oplus0730_regular"
+                                                android:alpha="0.7"/>
+                                        </LinearLayout>
+                                    </androidx.cardview.widget.CardView>
+                                    <androidx.cardview.widget.CardView
+                                        android:layout_width="match_parent"
+                                        app:cardCornerRadius="10dp"
+                                        android:layout_marginTop="10dp"
+                                        app:cardBackgroundColor="#212121"
+                                        android:layout_height="wrap_content">
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:gravity="center_vertical"
+                                            android:padding="12dp"
+                                            android:layout_height="match_parent" >
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="Age : "
+                                                android:textSize="15dp"
+                                                android:textStyle="bold"
+                                                android:alpha="0.7"/>
+                                            <TextView
+                                                android:id="@+id/age_txt"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:paddingStart="5dp"
+                                                android:text="20 years"
+                                                android:fontFamily="@font/oplus0730_regular"
+                                                android:alpha="0.7"/>
+                                        </LinearLayout>
+                                    </androidx.cardview.widget.CardView>
+                                    <androidx.cardview.widget.CardView
+                                        android:layout_width="match_parent"
+                                        app:cardCornerRadius="10dp"
+                                        android:layout_marginTop="10dp"
+                                        app:cardBackgroundColor="#212121"
+                                        android:layout_height="wrap_content">
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:gravity="center_vertical"
+                                            android:padding="12dp"
+                                            android:layout_height="match_parent" >
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="HomeTown : "
+                                                android:textSize="15dp"
+                                                android:textStyle="bold"
+                                                android:alpha="0.7"/>
+                                            <TextView
+                                                android:id="@+id/hometown_txt"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:paddingStart="5dp"
+                                                android:text="Chandigarh"
+                                                android:fontFamily="@font/oplus0730_regular"
+                                                android:alpha="0.7"/>
+                                        </LinearLayout>
+                                    </androidx.cardview.widget.CardView>
+                                    <androidx.cardview.widget.CardView
+                                        android:layout_width="match_parent"
+                                        app:cardCornerRadius="10dp"
+                                        android:layout_marginTop="10dp"
+                                        app:cardBackgroundColor="#212121"
+                                        android:layout_height="wrap_content">
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:gravity="center_vertical"
+                                            android:padding="12dp"
+                                            android:layout_height="match_parent" >
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="Gender : "
+                                                android:textSize="15dp"
+                                                android:textStyle="bold"
+                                                android:alpha="0.7"/>
+                                            <TextView
+                                                android:id="@+id/gender_txt"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:paddingStart="5dp"
+                                                android:text="Default"
+                                                android:fontFamily="@font/oplus0730_regular"
+                                                android:alpha="0.7"/>
+                                        </LinearLayout>
+                                    </androidx.cardview.widget.CardView>
+
+                                    <androidx.cardview.widget.CardView
+                                        android:layout_width="match_parent"
+                                        app:cardCornerRadius="10dp"
+                                        android:layout_marginTop="10dp"
+                                        app:cardBackgroundColor="#212121"
+                                        android:layout_height="wrap_content">
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:gravity="center_vertical"
+                                            android:padding="12dp"
+                                            android:layout_height="match_parent" >
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="Height : "
+                                                android:textSize="15dp"
+                                                android:textStyle="bold"
+                                                android:alpha="0.7"/>
+                                            <TextView
+                                                android:id="@+id/height_txt"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:paddingStart="5dp"
+                                                android:text="6'1 Feet"
+                                                android:fontFamily="@font/oplus0730_regular"
+                                                android:alpha="0.7"/>
+                                        </LinearLayout>
+                                    </androidx.cardview.widget.CardView>
+
+                                    <androidx.cardview.widget.CardView
+                                        android:layout_width="match_parent"
+                                        app:cardCornerRadius="10dp"
+                                        android:layout_marginTop="10dp"
+                                        app:cardBackgroundColor="#212121"
+                                        android:layout_height="wrap_content">
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:gravity="center_vertical"
+                                            android:padding="12dp"
+                                            android:layout_height="match_parent" >
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="Weight : "
+                                                android:textSize="15dp"
+                                                android:textStyle="bold"
+                                                android:alpha="0.7"/>
+                                            <TextView
+                                                android:id="@+id/weight_txt"
+
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:paddingStart="5dp"
+                                                android:text="80 Kg"
+                                                android:fontFamily="@font/oplus0730_regular"
+                                                android:alpha="0.7"/>
+                                        </LinearLayout>
+                                    </androidx.cardview.widget.CardView>
+                                    <androidx.cardview.widget.CardView
+                                        android:layout_width="match_parent"
+                                        app:cardCornerRadius="10dp"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_marginBottom="10dp"
+                                        app:cardBackgroundColor="#212121"
+                                        android:layout_height="wrap_content">
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:gravity="center_vertical"
+                                            android:padding="12dp"
+                                            android:layout_height="match_parent" >
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="Date Of Birth : "
+                                                android:textSize="15dp"
+                                                android:textStyle="bold"
+                                                android:alpha="0.7"/>
+                                            <TextView
+                                                android:id="@+id/dob_txt"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:paddingStart="5dp"
+                                                android:text="8/08/2000"
+                                                android:fontFamily="@font/oplus0730_regular"
+                                                android:alpha="0.7"/>
+                                        </LinearLayout>
+                                    </androidx.cardview.widget.CardView>
+                                </LinearLayout>
+                            </ScrollView>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="bottom">
+
+                                <Button
+                                    android:layout_width="match_parent"
+                                    android:textAllCaps="false"
+                                    android:textSize="17dp"
+                                    android:id="@+id/sign_out"
+                                    android:fontFamily="@font/oplus0730_regular"
+                                    android:text="Sign Out"
+                                    android:background="@drawable/sign_out_bg"
+                                    android:layout_height="40dp"/>
+
+
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+        <!--base pannel -->
+        <LinearLayout
+            android:id="@+id/linear2"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:id="@+id/session_base"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="3dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <ImageView
+                    android:id="@+id/session_base_image"
+                    android:layout_width="26dp"
+                    android:layout_height="25dp"
+                    app:tint="#5C5C5C"
+                    android:src="@drawable/baseline_assessment_24"
+                    android:scaleType="centerInside" />
+                <TextView
+                    android:id="@+id/session_base_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    android:text="Sessions"
+                    android:textSize="11sp"
+                    android:textColor="#5C5C5C" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/more_base"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="3dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <ImageView
+                    android:id="@+id/more_base_image"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:padding="2dp"
+                    app:tint="#5C5C5C"
+                    android:src="@drawable/ic_my_games"
+                    android:scaleType="fitXY" />
+                <TextView
+                    android:id="@+id/more_base_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    android:text="More"
+                    android:textSize="11sp"
+                    android:textColor="#5C5C5C" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/chat_base"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="3dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <ImageView
+                    android:id="@+id/chat_base_image"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    app:tint="#5C5C5C"
+                    android:src="@drawable/lawyer_logo"
+                    android:scaleType="fitXY" />
+                <TextView
+                    android:id="@+id/chat_base_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    android:text="Lawyer"
+                    android:textSize="11sp"
+                    android:textColor="#5C5C5C" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/profile_base"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="3dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <ImageView
+                    android:id="@+id/profile_base_image"
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+
+                    android:src="@drawable/profile_logo"
+                    android:scaleType="fitXY"
+                    app:tint="#FFFFFF" />
+                <TextView
+                    android:id="@+id/profile_base_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    android:text="Profile"
+                    android:textSize="11sp"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
